@@ -10,7 +10,7 @@ The `getNGS.sh` script is designed to process the retrieval of Next-Generation S
 
 ## runSpades.sh
 
-`runSpades.sh` script is to assemble RNA or DNA sequences using the SPAdes (St. Petersburg Assembler) software. It begins by creating a directory named `spades_output` to store the assembly results. The script defines a function called `Spades`, which invokes the `spades.py` command with the following parameters: `-1` and `-2` specify the input paired-end FASTQ files (denoted as `.R1.paired.fastq` and `.R2.paired.fastq`, respectively). The output of the assembly process is directed to the previously created `spades_output` directory. The script concludes by calling the `Spades` function to execute the assembly process.we should ensure that the input FASTQ files are named appropriately before running the script.
+`runSpades.sh` script is to assemble RNA or DNA sequences using the SPAdes software. It begins by creating a directory named `spades_output` to store the assembly results. The script defines a function called `Spades`, which invokes the `spades.py` command with the following parameters: `-1` and `-2` specify the input paired-end FASTQ files (denoted as `.R1.paired.fastq` and `.R2.paired.fastq`, respectively). The output of the assembly process is directed to the previously created `spades_output` directory. The script concludes by calling the `Spades` function to execute the assembly process.we should ensure that the input FASTQ files are named appropriately before running the script.
 
 ## sbatch_assembleGenome.sh
 
