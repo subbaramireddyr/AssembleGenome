@@ -8,12 +8,12 @@
 
 echo "Starting our analysis $(date)"  
 
-ORGANISM="Rhodo"  # in future, we will define this as part of a config file
-SRR_ID=SRR522244  # in future, we will define this as part of a config file
+ORGANISM="organism_name"  # in future, we will define this as part of a config file
+SRR_ID=SRRNumber  # in future, we will define this as part of a config file
 
 echo "$ORGANISM SRR reads to process: $SRR_ID"
 
-echo "Loading our BINF6308 Anaconda environment."
+echo "Loading our Anaconda environment."
 module load anaconda3/2021.11
 source activate BINF-12-2021
 
