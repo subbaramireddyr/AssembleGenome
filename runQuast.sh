@@ -2,7 +2,7 @@
 # runQuast.sh
 
 function Quast {
-    quast.py rhodo/contigs.fasta
+    quast.py contigs.fasta
 }
 
 Quast
