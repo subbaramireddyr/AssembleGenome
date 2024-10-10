@@ -7,12 +7,12 @@ PATH_TO_TRIMMOMATIC="/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/tr
 function trim {
     trimmomatic PE \
     -threads 1 -phred33 \
-    SRR522244_1.fastq \
-    SRR522244_2.fastq \
-    Rhodo.R1.paired.fastq \
-    Rhodo.R1.unpaired.fastq \
-    Rhodo.R2.paired.fastq \
-    Rhodo.R2.unpaired.fastq \
+    SRRNumber_1.fastq \
+    SRRNumber_2.fastq \
+    .R1.paired.fastq \
+    .R1.unpaired.fastq \
+    .R2.paired.fastq \
+    .R2.unpaired.fastq \
     HEADCROP:0 \
     ILLUMINACLIP:$PATH_TO_TRIMMOMATIC/adapters/TruSeq3-PE.fa:2:30:10 \
     LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
